@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FF333333"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myit.wan.steamkw.Sign_In">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF000000">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="99dp"
+            android:src="@drawable/steamlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="STEAM"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Sign In"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="To an existing Steam account"
+       android:textColor="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:text="Steam Username"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="11dp"
+            android:background="#FF000000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:text="Password"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:background="#FF000000"
+            android:id="@+id/editText2" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Sign in"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+
